@@ -637,6 +637,27 @@
         ]
       ]
     },
+    "User": {
+      "columns": {
+        "username": {
+          "category": "configuration",
+          "type": "string",
+          "mutable": false
+        },
+        "password": {
+          "category": "configuration",
+          "type": "string",
+          "mutable": true,
+          "ephemeral": true
+        }
+      },
+      "indexes": [
+        [
+          "username"
+        ]
+      ],
+      "isRoot": true
+    },
     "Route_Map": {
       "columns": {
         "name": {
